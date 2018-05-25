@@ -9,6 +9,9 @@ env :
     - 'FTP_PASS=nazilst12345'
 
 script : 
-  - "curl -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com -Q 'mkd public_html/Project_UAS'"
-  - "curl -T index.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/Project_UAS/"
+  
+  - "curl -T delete.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/Project_UAS/"
+  - "curl -T Edit.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/Project_UAS/"
+  - "curl -T tambah.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/Project_UAS/"
+  - "curl -T koneksi.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/Project_UAS/"
   
