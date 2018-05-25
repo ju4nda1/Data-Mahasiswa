@@ -5,16 +5,10 @@ php:
 
 env :
   global :
-    - 'FTP_USER=nazilgaming98'
+    - 'FTP_USER=naziljuandagaming'
     - 'FTP_PASS=nazilst12345'
 
 script : 
-  - "curl -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com -Q 'mkd public_html/praktek-4d'"
-  - "curl -T coba.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/praktek-4d/"
-  - "curl -T edit-form.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/praktek-4d/"
-  - "curl -T hapus.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/praktek-4d/"
-  - "curl -T main.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/praktek-4d/"
-  - "curl -T simpan-baru.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/praktek-4d/"
-  - "curl -T tambah.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/praktek-4d/"
-  - "curl -T update.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/praktek-4d/"
-  - "curl -T koneksi.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/praktek-4d/"
+  - "curl -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com -Q 'mkd public_html/Project UAS'"
+  - "curl -T index.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/Project UAS/"
+  
